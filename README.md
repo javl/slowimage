@@ -1,5 +1,5 @@
 ## Lora Image Sender ##
-Made during Hackers & Designers Summer Academy 2017, On&Off the grid. During this workshop we were introducted to LoRa, a low-power, low-bandwidth network technology.
+Made during [Hackers & Designers Summer Academy 2017, On & Off the grid](https://hackersanddesigners.nl/s/Summer_Academy_2017). During this workshop we were introducted to LoRa, a low-power, low-bandwidth network technology.
 
 `img_sender.py` takes an image and converts it to bytes. When ready, the Arduino will request four bytes from this script and send them over LoRa. It will then sleep for about a minute before requesting the next four bytes.
 `img_receiver.py` uses MQTT to connect to [The Things Network](https://www.thethingsnetwork.org/) to get the sent data and will try to rebuild the image.
